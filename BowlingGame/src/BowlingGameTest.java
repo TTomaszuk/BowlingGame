@@ -20,7 +20,7 @@ public class BowlingGameTest {
 		System.out.println(rowek2);
 	}
 
-	static void calculateFrame(BowlingGame gra, int f){ // wynik ramki f
+	static int calculateFrame(BowlingGame gra, int f){ // wynik ramki f
 		int wynik = 0;
 		String typ = "";
 		
@@ -70,7 +70,8 @@ public class BowlingGameTest {
 		}
 		else System.out.println("Dozwolony jest nr ramki z zakresu <1,10>");
 
-		System.out.println("ramka: " + f + ", typ: " + typ + ", wynik:" + wynik);
+		//System.out.println("ramka: " + f + ", typ: " + typ + ", wynik:" + wynik);
+	    return wynik;
 	}
 }
 

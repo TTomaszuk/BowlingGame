@@ -6,6 +6,7 @@ public class BowlingGameMain {
 
 		gra1.roll(0); //pierwszy rzut
 		gra1.roll(3);
+		System.out.println("aktualny wynik: " + gra1.calculateScore());
 		gra1.roll(4);
 		gra1.roll(3);
 		gra1.roll(2);
@@ -28,8 +29,10 @@ public class BowlingGameMain {
 		gra1.roll(2);
 
 		BowlingGameTest.showRollsTable(gra1);
+		
 		System.out.println("aktualny wynik: " + gra1.calculateScore());
 		
-		BowlingGameTest.calculateFrame(gra1,10);
+		System.out.println("ramka 1 wynik:" + BowlingGameTest.calculateFrame(gra1,1));
+		
 	}
 }
