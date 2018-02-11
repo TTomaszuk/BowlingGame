@@ -68,7 +68,10 @@ public class BowlingGameTest {
 				typ = "strike";
 			}
 		}
-		else System.out.println("Dozwolony jest nr ramki z zakresu <1,10>");
+		else {
+			System.out.println("Dozwolony jest nr ramki z zakresu <1,10>");
+			wynik = -1;
+		}
 
 		//System.out.println("ramka: " + f + ", typ: " + typ + ", wynik:" + wynik);
 	    return wynik;
